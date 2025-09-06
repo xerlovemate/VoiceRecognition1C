@@ -1,0 +1,99 @@
+/* Подключение шрифта Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Основные стили для главного окна */
+QMainWindow {
+    background-color: #FFFFFF; /* Белый фон */
+    border: 1px solid #B0B0B0;
+    font-family: 'Lato', sans-serif; /* Современный шрифт */
+}
+
+/* Стили для меток (надписей) */
+QLabel {
+    font-size: 18px; /* Размер шрифта увеличен для лучшей видимости */
+    color: #333; /* Темно-серый цвет текста */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400; /* Обычный шрифт */
+}
+
+/* Стили для заголовков */
+QLabel#title {
+    font-size: 24px; /* Увеличенный размер шрифта для заголовка */
+    font-weight: 700; /* Жирный шрифт для заголовка */
+}
+
+/* Стили для кнопок */
+QPushButton {
+    background-color: #F7B72C; /* Основной желтый цвет кнопок */
+    border: 2px solid #F7A000; /* Темно-желтый бордер */
+    border-radius: 12px; /* Скругленные углы */
+    padding: 12px;
+    font-size: 14px; /* Размер шрифта на кнопках уменьшен для лучшего умещения текста */
+    color: #FFFFFF; /* Белый цвет текста на кнопке */
+    width: 220px; /* Ширина кнопок увеличена */
+    text-align: center;
+    font-family: 'Lato', sans-serif; /* Современный шрифт для кнопок */
+    font-weight: 700; /* Жирный шрифт для текста на кнопках */
+    white-space: nowrap; /* Предотвращает перенос текста */
+    overflow: hidden; /* Обрезает текст, который не помещается */
+    text-overflow: ellipsis; /* Добавляет многоточие, если текст не помещается */
+}
+
+/* Стили при наведении на кнопку */
+QPushButton:hover {
+    background-color: #F7A000; /* Светлее желтый при наведении */
+}
+
+/* Стили при нажатии на кнопку */
+QPushButton:pressed {
+    background-color: #F79F00; /* Более темный желтый при нажатии */
+}
+
+/* Стили для основного лейаута и выравнивания содержимого */
+QVBoxLayout, QHBoxLayout {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для чекбокса (тумблера) */
+QCheckBox {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+QCheckBox::indicator {
+    width: 24px;
+    height: 24px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #F7B72C;
+    border: 2px solid #F7A000;
+    border-radius: 12px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #FFFFFF;
+    border: 2px solid #F7A000;
+    border-radius: 12px;
+}
+
+QPushButton {
+    margin: 5px;  /* Добавляем отступы между кнопками */
+}
+
+/* Стили для кнопки Старт/Стоп */
+QPushButton[text="Стоп"] {
+    background-color: #FF4D4D; /* Красный для активного состояния */
+}
+
+QPushButton[text="Стоп"]:hover {
+    background-color: #FF3333;
+}
+
+QPushButton[text="Стоп"]:pressed {
+    background-color: #FF1A1A;
+}
